@@ -1,4 +1,4 @@
-import { profitResults } from '../util/profit';
+import { profitResults, formatter } from '../util/profit';
 
 export default function Return({ investInput }) {
   const returnData = profitResults(investInput);
@@ -20,9 +20,9 @@ export default function Return({ investInput }) {
           return (
             <tr key={data.year}>
               <td>{data.year}</td>
-              <td>{data.stockNumber}</td>
-              <td>{data.stockPrice}</td>
-              <td>{investment}</td>
+              <td>{formatter.format(data.stockNumber)}</td>
+              <td>{formatter.format(data.stockPrice)}</td>
+              <td>{formatter.format(investment)}</td>
             </tr>
           );
         })}
