@@ -4,7 +4,7 @@ export default function Return({ investInput }) {
   const returnData = profitResults(investInput);
 
   return (
-    <table>
+    <table id="return-table">
       <thead>
         <tr>
           <th>Year</th>

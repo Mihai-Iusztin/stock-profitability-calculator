@@ -57,3 +57,30 @@ html {
   background-color: transparent;
   padding: 0.25rem;
 }
+
+#return-table {
+  width: 50rem;
+  max-width: 60rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  table-layout: fixed;
+  text-align: left;
+  border-spacing: 1rem;
+}
+
+/* #return-table table {
+  padding-right: 2rem;
+} */
+
+#return-table thead {
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(35, 163, 71);
+  border: 1px solid rgb(193, 31, 31);
+}
+
+#return-table tbody {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(80, 211, 117);
+}

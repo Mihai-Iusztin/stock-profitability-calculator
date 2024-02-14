@@ -34,7 +34,7 @@ export function profitResults({
 // This object offers a "format()" method that can be used to format numbers as currency
 // Example Usage: formatter.format(1000) => yields "$1,000"
 export const formatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
+  //   style: 'currency',
   currency: 'USD',
   minimumFractionDigits: 2,
   maximumFractionDigits: 2,
