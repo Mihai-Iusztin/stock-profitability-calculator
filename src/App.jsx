@@ -1,4 +1,5 @@
 import Input from './components/Input';
+import Return from './components/Return';
 import { useState } from 'react';
 
 function App() {
@@ -8,8 +9,8 @@ function App() {
   const [newInput, setNewInput] = useState({
     // instrument: 'AMD',
     initialStocks: 10,
-    initialPrice: 136.55,
-    annualProfitability: 22,
+    initialPrice: 100,
+    annualProfitability: 10,
     annualNewStocks: 5,
     duration: 10,
   });
@@ -41,6 +42,7 @@ function App() {
         instrumentChange={handleInstrument}
         instrumentInput={instrumentInput}
       />
+      <Return investInput={newInput} />
     </>
   );
 }
