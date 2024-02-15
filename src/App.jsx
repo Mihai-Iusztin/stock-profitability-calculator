@@ -23,6 +23,7 @@ function App() {
       };
     });
   }
+  let isValid = newInput.duration >= 1;
 
   function handleInput(identifier, newValue) {
     setNewInput((prevInput) => {
@@ -32,8 +33,7 @@ function App() {
       };
     });
   }
-  console.log(newInput);
-  console.log(instrumentInput);
+
   return (
     <>
       <Input
@@ -42,7 +42,8 @@ function App() {
         instrumentChange={handleInstrument}
         instrumentInput={instrumentInput}
       />
-      <Return investInput={newInput} />
+      {isValid && <Return investInput={newInput} />}
+      {!isValid && <p className="isvalid">Please enter valid duration!</p>}
     </>
   );
 }

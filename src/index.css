@@ -4,7 +4,7 @@
 
 html {
   margin: 0;
-  background: radial-gradient(rgb(6, 6, 107), rgb(36, 36, 238));
+  background: radial-gradient(rgb(3, 3, 71), rgb(45, 45, 237));
 }
 
 #logo {
@@ -33,6 +33,7 @@ html {
   background: linear-gradient(rgb(2, 114, 118), rgb(3, 70, 141));
   border-radius: 5px;
   padding: 2rem;
+  box-shadow: 0 1px 2px 2px rgb(13, 126, 130);
 }
 
 .user-input {
@@ -44,8 +45,9 @@ html {
   display: block;
   font-size: 0.75rem;
   font-weight: bold;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
   color: antiquewhite;
 }
 
@@ -76,11 +78,16 @@ html {
   text-align: center;
   font-size: 1rem;
   color: rgb(35, 163, 71);
-  border: 1px solid rgb(193, 31, 31);
 }
 
 #return-table tbody {
   text-align: center;
   font-size: 0.9rem;
   color: rgb(80, 211, 117);
+}
+
+.isvalid {
+  text-align: center;
+  color: rgb(179, 16, 16);
+  font-size: 1.5rem;
 }

@@ -44,7 +44,7 @@ export default function Input({
       </div>
       <div className="user-input">
         <p>
-          <label htmlFor="">Stock variation %/year</label>
+          <label htmlFor="">Stock %/year</label>
           <input
             type="number"
             required
